@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Reggae+One&display=swap');
+body{
+    font-family: 'Reggae One', cursive;
+    background: url(Icons/phy.jpg);
+    background-size: cover;
+}
+.Ulist{
+    list-style: none;
+    text-align: right;
+    
+    /* text-decoration: none; */
+}
+.list{
+    display: inline;
+    padding-right: 30px;
+}
+h1{
+    margin-left: 50px;
+    font-size: 35px;
+}
+.navigation{
+    border-style: none;
+    box-shadow: 1px 2px 10px rgb(107, 106, 106);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 15px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 5px;
+    animation-name: heading;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+@keyframes heading{
+    0%{
+        background: linear-gradient(45deg, rgb(212, 253, 246),rgb(206, 207, 207)); 
+    }
+    100%{
+        background: linear-gradient(45deg, rgb(224, 248, 248),rgb(202, 205, 206));  
+    }
+}
+
+.item{
+    border-style: none;
+    display: flex;
+    justify-content:space-around;
+    height: auto;
+    flex-wrap: wrap;
+    row-gap: 50px;
+}
+.Itm{
+    border-style: none;
+    height: 35%;
+    width: 40%;
+    display: flex;
+    justify-content:center;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    background: linear-gradient(45deg, rgb(244, 253, 253), rgb(216, 239, 247), rgb(157, 245, 252));
+    /* border-color: rgb(232, 254, 255); */
+    word-wrap:unset;
+    border-width: 5px;
+    padding: 5px;
+    text-align: center;
+    /* background:inherit; */
+}
+
+.item:hover .Itm{
+    filter: blur(0.5px);
+    transition: 0.5s;
+}
+.item .Itm:hover{
+    transform: scale(1.02);  
+    filter: blur(0px);
+    transition: 0.5s;
+}
+.So_li{
+    list-style: none;
+    
+}
+.icon{
+    width: 35px;
+}
+h2{
+    padding-left: 30px;
+}
+.social{
+    display: inline;
+    padding: 30px;
+}
+.foot{
+    border-style: solid;
+    border-color: white;
+    background-color: whitesmoke;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding-top: 5vh;
+    margin-top: 10vh;
+    text-align: center;
+    
+}
+.sec1{
+    word-wrap:break-word;
+    font-size: 30px;
+    text-align:center;
+    margin: 10vh;
+    color: white;
+}
